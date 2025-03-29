@@ -11,9 +11,10 @@ import { AuthInterceptor } from './interceptors/auth.service';
 import { AddressBookComponent } from './components/address-book/address-book.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { PersonAddressFormComponent } from './components/person-address-form/person-address-form.component';
 
 @NgModule({
-  declarations: [AppComponent, RegisterComponent, NavbarComponent, LoginComponent, AddressBookComponent, ForgotPasswordComponent, ResetPasswordComponent],
+  declarations: [AppComponent, RegisterComponent, NavbarComponent, LoginComponent, AddressBookComponent, ForgotPasswordComponent, ResetPasswordComponent, PersonAddressFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

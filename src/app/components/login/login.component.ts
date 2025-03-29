@@ -25,7 +25,6 @@ export class LoginComponent {
         next: (res: any) => {
           console.log('Login successfull:', res);
           localStorage.setItem('token', res.token.result);
-          alert('Login Successful!');
           this.router.navigate(['/addressBook']);
         },
         error: (err: any) => {

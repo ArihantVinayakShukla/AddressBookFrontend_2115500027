@@ -1,4 +1,14 @@
-<nav class="navbar" [routerLink]="['/addressBook']">
-    <img src="assets/logo.png" alt="Logo" class="logo">
-  </nav>
-  
+<nav class="navbar">
+  <img  [routerLink]="['/addressBook']" src="assets/logo.png" alt="Logo" class="logo">
+
+  <div *ngIf="authService.isLoggedIn()">
+    <div class="person-icon-container">
+      <img src="assets/person-icon.png" alt="Person Icon" class="person-icon" (click)="toggleMenu()">
+      
+      <div *ngIf="menuVisible" class="dropdown-menu">
+        <button class="profile-btn" (click)="goToProfile()">Profile</button>
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</nav>
