@@ -88,8 +88,23 @@
         }
       }
   
-      .register-link {
-        font-weight: bold;
+      p {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0;
+        color: #636363;
+    
+        a {
+          padding: 8px 8px;
+          color: #007bff;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
   }
